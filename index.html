@@ -1,0 +1,949 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Superior Auto Spa" property="og:title">
+    
+        <meta content="https://landing-page-app-hero-images.s3.amazonaws.com/media/VPFI1HCBGW9VUAIYTA54EBJPN356NCDZEIXIRRYM.jpeg" property="og:image">
+        <meta content="Superior Auto Spa" property="twitter:title">
+        <meta content="https://landing-page-app-hero-images.s3.amazonaws.com/media/VPFI1HCBGW9VUAIYTA54EBJPN356NCDZEIXIRRYM.jpeg" property="twitter:image">
+        <link href="https://landing-page-app-hero-images.s3.amazonaws.com/media/VPFI1HCBGW9VUAIYTA54EBJPN356NCDZEIXIRRYM.jpeg" rel="shortcut icon" type="image/x-icon">
+        <link href="https://landing-page-app-hero-images.s3.amazonaws.com/media/VPFI1HCBGW9VUAIYTA54EBJPN356NCDZEIXIRRYM.jpeg" rel="apple-touch-icon">     
+    
+    <title>
+         
+            New Orleans, LA - Expert Mobile Detailing | Superior Auto Spa
+        
+    </title>
+    <meta name="description" content="Schedule your free quote today! Proudly serving 
+         
+            New Orleans, LA & surrounding areas.
+         
+        Superior Auto Spa is New Orleans&#x27; most trusted detailing service. We are a customer-first company and you are always a priority. Our team is professional, …"
+    >
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/4f07488cb7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css">
+       
+     
+    
+    
+    <link href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/style.css" rel="stylesheet">
+    
+    <link href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/render.css" rel="stylesheet">
+    
+    <script src="https://prophone.herokuapp.com/staticfiles/landing_page_gen/render.js"></script> 
+</head>
+
+<body>
+
+
+
+<div class = "flex w-full flex-col">  
+    <div  class="sticky w-full lg:h-25 lg:py-4 items-start justify-start  bg-white text-gray-700  dark-mode:text-gray-200 dark-mode:bg-gray-800">
+  <div x-data="{ open: false }" class="flex flex-col lg:flex-r max-w-screen-xl px-4 mx-auto lg:items-center lg:justify-between lg:flex-row lg:px-6 lg:px-8">
+    <div class="py-4 flex flex-row items-center justify-between">
+      
+        <a href="#about"> <img class="h-16 w-auto relative" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/VPFI1HCBGW9VUAIYTA54EBJPN356NCDZEIXIRRYM.jpeg" alt="Superior Auto Spa logo"> </a>
+      
+      <button class="lg:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+          <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    </div>
+    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 lg:pb-0 hidden lg:flex lg:justify-end lg:flex-row">
+      
+<a 
+    class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
+    href="#about">About Us
+</a>
+      
+      
+<a 
+    class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
+    href="#services">Our Services
+</a>
+     
+      
+<a 
+    class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
+    href="#our-work">Our Best Work
+</a>
+     
+           
+      
+<a 
+    class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
+    href="#testimonials">Testimonials &amp; Reviews
+</a>
+ 
+         
+      
+<a 
+    class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
+    href="#faqs">Faqs
+</a>
+     
+      
+<a 
+    class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
+    href="#find-us">Service Areas
+</a>
+     
+
+      
+         <div class = "px-4 py-2 lg:pb-3 mt-2 text-xl font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"x-data="{open: false}">
+        
+            <a target = "_blank"  x-on:click.prevent="open = true" class="" href="">Send us a Text</a>
+      
+
+              
+        <div x-show.transition.opacity="open" class="p-4 fixed flex justify-center items-center inset-0 bg-black bg-opacity-75 z-50">
+    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
+            <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
+        <div class="block mb-4 border border-gray-200 rounded-lg">
+            <input type="text" name="first-name" id="1-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
+        </div>
+        <div class="block mb-4 border border-gray-200 rounded-lg">
+            <input type="text" name="last-name" id="1-last-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Last Name">
+        </div>
+        <div class="block mb-4 border border-gray-200 rounded-lg">
+            <input type="text" name="phone-number" id="1-phone-number" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Phone Number">
+        </div>
+        <div class="block mb-4 border border-gray-200 rounded-lg">
+            <textarea name="message" cols="5" id="1-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
+        </div>
+        <div class="block">
+        <button type="button" 
+         
+            onMouseOver="this.style.backgroundColor='#000000'; this.style.color='#9F0A05' "
+            onMouseOut="this.style.backgroundColor='#9F0A05'; this.style.color='white'"
+            style="background-color:#9F0A05; color:white"               
+
+         
+        onclick= "send_sms(1, 'Superior-Auto-Spa')" 
+        class="w-full px-3 py-4 font-bold font-lg text-white  bg-gray-400 text-white hover:bg-black hover:text-gray-400 rounded-lg">Send</button> 
+        </div>           
+
+    </form>
+</div>
+    </nav>
+  </div>
+</div>
+    <section   style= "background-color:#000000"  
+class="flex flex-col w-full  bg-gray-900 text-white  lg:flex-row lg:flex-wrap sm:mx-auto pt-12 mt-12">
+    <div class="flex justify-end p-8 lg:py-32 lg:px-16 lg:pl-10 lg:w-1/2">
+        <div class="flex flex-col items-center lg:items-start justify-center w-full lg:max-w-lg">
+            <h2 class="mb-3 text-3xl text-center font-extrabold  leading-none sm:text-4xl lg:text-7xl text-center lg:text-left">
+                Superior Auto Spa  
+            </h2>
+            
+            <h1 class="pt-5 lg:text-xl text-center lg:text-left">
+                Expert mobile detailing in  New Orleans & surrounding areas.  Exceptional, Professional Finish. You Are Our Priority.
+            </h1>
+            
+            <h2 class="py-5 mb-5 lg:text-xl text-center lg:text-left">
+            </h2>
+            <div id="cover-button">
+                 
+            <div id="" class="flex text-center justify-center items-center" x-data="{open: false}">
+                
+<button 
+ 
+    onMouseOver="this.style.backgroundColor='white'; this.style.color='#000000' "
+    onMouseOut="this.style.backgroundColor='#9F0A05'; this.style.color='white'"
+    style="background-color:#9F0A05; color:white"               
+
+ type="button" x-on:click.prevent="open = true" class="inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-gray-400 text-white hover:bg-white hover:text-gray-900">
+    <h5 class="text-3xl font-extrabold">Send us a Text</h5> 
+</button>
+
+                <div x-show.transition.opacity="open" class="p-4 fixed flex justify-center items-center inset-0 bg-black bg-opacity-75 z-50">
+    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
+            <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
+        <div class="block mb-4 border border-gray-200 rounded-lg">
+            <input type="text" name="first-name" id="1-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
+        </div>
+        <div class="block mb-4 border border-gray-200 rounded-lg">
+            <input type="text" name="last-name" id="1-last-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Last Name">
+        </div>
+        <div class="block mb-4 border border-gray-200 rounded-lg">
+            <input type="text" name="phone-number" id="1-phone-number" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Phone Number">
+        </div>
+        <div class="block mb-4 border border-gray-200 rounded-lg">
+            <textarea name="message" cols="5" id="1-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
+        </div>
+        <div class="block">
+        <button type="button" 
+         
+            onMouseOver="this.style.backgroundColor='#000000'; this.style.color='#9F0A05' "
+            onMouseOut="this.style.backgroundColor='#9F0A05'; this.style.color='white'"
+            style="background-color:#9F0A05; color:white"               
+
+         
+        onclick= "send_sms(1, 'Superior-Auto-Spa')" 
+        class="w-full px-3 py-4 font-bold font-lg text-white  bg-gray-400 text-white hover:bg-black hover:text-gray-400 rounded-lg">Send</button> 
+        </div>           
+
+    </form>
+</div>
+
+            </div>
+
+            </div>
+            <div id="side-button" class="fixed bottom-3 -right-72 z-50 mr-3 md:mr-0">
+                 
+            <div id="" class="flex text-center justify-center items-center" x-data="{open: false}">
+                
+<button 
+ 
+    onMouseOver="this.style.backgroundColor='white'; this.style.color='#000000' "
+    onMouseOut="this.style.backgroundColor='#9F0A05'; this.style.color='white'"
+    style="background-color:#9F0A05; color:white"               
+
+ type="button" x-on:click.prevent="open = true" class="inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-gray-400 text-white hover:bg-white hover:text-gray-900">
+    <h5 class="text-3xl font-extrabold">Send us a Text</h5> 
+</button>
+
+                <div x-show.transition.opacity="open" class="p-4 fixed flex justify-center items-center inset-0 bg-black bg-opacity-75 z-50">
+    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
+            <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
+        <div class="block mb-4 border border-gray-200 rounded-lg">
+            <input type="text" name="first-name" id="1-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
+        </div>
+        <div class="block mb-4 border border-gray-200 rounded-lg">
+            <input type="text" name="last-name" id="1-last-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Last Name">
+        </div>
+        <div class="block mb-4 border border-gray-200 rounded-lg">
+            <input type="text" name="phone-number" id="1-phone-number" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Phone Number">
+        </div>
+        <div class="block mb-4 border border-gray-200 rounded-lg">
+            <textarea name="message" cols="5" id="1-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
+        </div>
+        <div class="block">
+        <button type="button" 
+         
+            onMouseOver="this.style.backgroundColor='#000000'; this.style.color='#9F0A05' "
+            onMouseOut="this.style.backgroundColor='#9F0A05'; this.style.color='white'"
+            style="background-color:#9F0A05; color:white"               
+
+         
+        onclick= "send_sms(1, 'Superior-Auto-Spa')" 
+        class="w-full px-3 py-4 font-bold font-lg text-white  bg-gray-400 text-white hover:bg-black hover:text-gray-400 rounded-lg">Send</button> 
+        </div>           
+
+    </form>
+</div>
+
+            </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="relative order-first lg:order-last block lg:w-1/2 ">
+
+    
+        <video class="object-cover w-full lg:absolute h-80 lg:h-full" autoplay loop muted playsinline >
+        <source src="https://landing-page-app-hero-images.s3.amazonaws.com/media/0UDXDLA4M8RYZON8NC590EW15O1OOH4HIJMU8Y99.mp4" type = "video/mp4" >
+        </video>
+    
+    </div>
+
+
+        
+</section>
+    <section  style= "color:#000000 "   id = "about" 
+class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  bg-white text-gray-900 ">
+        <div class="relative lg:w-1/2">
+        
+        <video class="object-cover w-full lg:absolute h-80 lg:h-full" autoplay loop muted playsinline>
+            <source src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ZWOMGOKTV3QCN4CEV246KBMT4X4WPBZN0NKJ1UBB.mp4" type = "video/mp4" >
+        </video>
+        
+           
+        </div>
+        <div class="py-5 lg:py-0 flex flex-col lg:py-32 lg:px-16 lg:w-1/2">
+            <div class="flex flex-col items-center lg:items-start w-full lg:max-w-lg">
+                <h5 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl">
+                    About Us
+                </h5>
+                <p class="py-5 px-5 lg:px-0 mb-5 text-center lg:text-left  lg:text-xl">
+                Superior Auto Spa is New Orleans' most trusted detailing service. We are a customer-first company and you are always a priority. Our team is professional, trained, and ready to take care of all your detailing needs.
+                </p>                
+            </div>
+
+            <div class = "flex flex-row flex-wrap text-center w-full lg:max-w-lg">
+                
+                
+                
+                
+                
+                
+                
+                
+            
+            </div>
+            
+                <div class = "mt-10 mb-0 flex flex-row justify-center lg:justify-start text-center w-full lg:max-w-lg">
+                    <h2  style= "color:#000000 "  class="mb-3 text-4xl justify-center lg:justify-start text-center lg:text-left text-gray-900 font-extrabold leading-none tracking-wide text-center">
+                        Connect with us on Social
+                    </h2>
+                </div>
+                <div class = "flex flex-row mb-5 justify-center space-x-3 md:space-x-8 lg:space-x-12 lg:flex-nowrap mt-4   w-full lg:max-w-lg">
+                    
+    <a 
+    target="_blank" 
+    href = "https://www.facebook.com/SuperiorAutoSpaNola"> 
+        <span 
+             
+                style= "color:#9F0A05 " 
+             
+            class = " text-gray-400 "> 
+
+            <i class="fab fa-facebook fa-3x lg:fa-3x "></i>
+        </span> 
+    </a> 
+
+                    
+                    
+                    
+                    
+                    
+    <a 
+    target="_blank" 
+    href = "https://www.youtube.com/channel/UCZa6fG2_f9aBBfGsdIEqfYw"> 
+        <span 
+             
+                style= "color:#9F0A05 " 
+             
+            class = " text-gray-400 "> 
+
+            <i class="fab fa-youtube fa-3x lg:fa-3x "></i>
+        </span> 
+    </a> 
+
+                    
+                    
+                    
+                    
+                    
+                                  
+     
+
+               </div>
+            
+            
+        </div>
+        
+        
+
+
+    </section>
+    
+    
+    <section  style= "background-color:#000000"   id= "services" class="lg:mt-0 relative w-full px-8 font-sans leading-6  bg-gray-900 border-0 border-gray-200 text-white border-solid ">
+        <div class="flex flex-col items-center max-w-6xl px-8 py-20 mx-auto leading-6 border-solid md:items-stretch md:justify-center md:py-24">
+            
+            <h2 class="mb-3 lg:pr-9 text-3xl mx-auto font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide text-center">
+                Our Services
+            </h2>
+            <h2  style= "color:#9F0A05"  class="w-full lg:pr-9 max-w-3xl mx-0 mx-auto mt-4 mb-0 font-sans text-sm font-medium leading-relaxed text-center text-gray-400 border-0 border-gray-200 lg:text-lg md:text-base">
+                What we are best at  - expert  mobile detailing 
+                
+            </h2>
+
+            <div class="grid grid-cols-3 gap-5 mt-10 sm:grid-cols-8 lg:grid-cols-12">
+
+                    
+                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 ">
+                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
+                        
+                        <div  class="md:mt-6 font-sans text-center border-0 border-gray-200 ">
+                            <h3  style= "color:#9F0A05"  class="box-border text-xl font-bold leading-none tracking-wider border-solid text-gray-400  ">Full Detail Service</h3>
+                            <p
+                                class="box-border mx-0 mt-3 mb-0 font-normal leading-snug text-center border-solid">
+                                For cars, trucks and other vehicles we offer full service detailing to make your vehicle look new again! Interior and exterior detailing available.
+                            </p>
+                        </div>
+                    </div>
+                </div>        
+                    
+                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 ">
+                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
+                        
+                        <div  class="md:mt-6 font-sans text-center border-0 border-gray-200 ">
+                            <h3  style= "color:#9F0A05"  class="box-border text-xl font-bold leading-none tracking-wider border-solid text-gray-400  ">Ceramic Coating</h3>
+                            <p
+                                class="box-border mx-0 mt-3 mb-0 font-normal leading-snug text-center border-solid">
+                                Innovative technology allows us to apply a Ceramic Coating (Glass coating) to protect your car from extreme weather and scratches. Ceramic Coating protects your investment and helps to keep your vehicle looking new.
+                            </p>
+                        </div>
+                    </div>
+                </div>        
+                    
+                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 ">
+                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
+                        
+                        <div  class="md:mt-6 font-sans text-center border-0 border-gray-200 ">
+                            <h3  style= "color:#9F0A05"  class="box-border text-xl font-bold leading-none tracking-wider border-solid text-gray-400  ">Maintenance Wash</h3>
+                            <p
+                                class="box-border mx-0 mt-3 mb-0 font-normal leading-snug text-center border-solid">
+                                Keep your vehicle looking brand new with our maintenance wash. Our experienced staff will arrive quickly and get the job done right, every time.
+                            </p>
+                        </div>
+                    </div>
+                </div>        
+            
+            </div>
+        </div>
+    </section>
+    
+    
+        <div id="our-work" class="relative mb-0 w-full pt-12 overflow-hidden  bg-white text-gray-900   md:pt-20 xl:pt-20 xl:pb-20">
+            <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
+                <h2  style= "color:#000000" class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Our Best Work</h2>
+                <h2  style= "color:#9F0A05" class="my-3 mb-10 text-xl font-medium  text-gray-400  text-center">See why our customers love us</h2>
+                <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [     [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/H2MMUTW8RK4EV4QCIE7PNUI50995KK7ZQ8CNRVNI.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/Z9PZO35GOTUB0M74DX7LSEDDZ75VO1ADFP6BAT8V.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/O0BK22MJJ4VN670FGBIGY3SM1OXHSDW0BWY1EGWQ.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/QAOMODSSKC3O1762S2QWVJRNRWDZFXWGYTF93Z9E.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/N6EXKNQGEYRV9C7JP29JT1UADFJXW0T7CENVOXOD.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/X3GH3EIGLFKSI134HDC4WAZR5MXNGZT9GK4D7ECE.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/007QZR3ZQ96PXYMC5I78EXBCAISPRS44HL5NYAN5.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/R11HNJDFPY96RLUF6AOSYG3VBUINNC7VW648D32N.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/F2WRRJ4W4RMW39EDQ46YYRKHG3W8YSJCZDS5B0BX.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/Z8J2UG7KZBKVILPRPN7DHNQHQUR2BESDRKLINERT.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/OGGNXD9YVV5CTP62HM974HEZLZLQV63XDLO5W48U.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/J4H822KA6JOZC300VNGQI57QBWTI6TKD83W9VI1G.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/HC6DDC9QNMJKBPKK4RTF4B0ALWZWUOWC3ZE7RDPR.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/8UW9PLO9MG32PP1DJEBX0ZRCJP6CFPIJCRM64JY4.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/FC9WBX3PKB8BPPTR1YY8GNQJLE7JNLPXELL7TUW4.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/ZCHGXL5UWIYCQAGOHO2N963RP37RT7XY2A7UT5CF.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/VQ6DPMBBI7ODJW57U2U1I1CAZBWWI1ZK3GLT2LTM.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/O52ROP1QG0VE8FICHGXSKVB1QOA2VJRQL88DY3VN.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/WZNVO6DOUTYWZZI8NFKMOD5BKVT9H3TCH689DDP2.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/XUJBWQN6HVZNDLQO109BSG28WOTO1GKZDUALS0J4.jpeg', 'photo'],   ] }" @keydown.escape= "open = false"   >
+                                        
+                        
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40">
+                                <video class="rounded shadow-md object-cover w-full h-60" loading="lazy" controls> <source src="https://landing-page-app-hero-images.s3.amazonaws.com/media/3IZBX9NFYW6MQWTX7CLWOMY51HRTYHKRB02CXPTK.mp4" >
+                                </video>
+                            </div>
+                        
+                                        
+                            
+                                  
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 1; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/H2MMUTW8RK4EV4QCIE7PNUI50995KK7ZQ8CNRVNI.jpeg"  alt = "Photo number 2 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
+                        
+                                        
+                            
+                                  
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 2; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Z9PZO35GOTUB0M74DX7LSEDDZ75VO1ADFP6BAT8V.jpeg"  alt = "Photo number 3 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
+                        
+                                        
+                            
+                                  
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 3; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/O0BK22MJJ4VN670FGBIGY3SM1OXHSDW0BWY1EGWQ.jpeg"  alt = "Photo number 4 of Superior Auto Spa&#x27;s best work performing a Maintenance Wash job"   loading="lazy" ></div>
+                        
+                                        
+                            
+                                  
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 4; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/QAOMODSSKC3O1762S2QWVJRNRWDZFXWGYTF93Z9E.jpeg"  alt = "Photo number 5 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
+                        
+                                        
+                            
+                                  
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 5; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/N6EXKNQGEYRV9C7JP29JT1UADFJXW0T7CENVOXOD.jpeg"  alt = "Photo number 6 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
+                        
+                                        
+                            
+                                  
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 6; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/X3GH3EIGLFKSI134HDC4WAZR5MXNGZT9GK4D7ECE.jpeg"  alt = "Photo number 7 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
+                        
+                                        
+                            
+                                  
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 7; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/007QZR3ZQ96PXYMC5I78EXBCAISPRS44HL5NYAN5.jpeg"  alt = "Photo number 8 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
+                        
+                                        
+                            
+                                  
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 8; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/R11HNJDFPY96RLUF6AOSYG3VBUINNC7VW648D32N.jpeg"  alt = "Photo number 9 of Superior Auto Spa&#x27;s best work performing a Maintenance Wash job"   loading="lazy" ></div>
+                        
+                                        
+                            
+                                  
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 9; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/F2WRRJ4W4RMW39EDQ46YYRKHG3W8YSJCZDS5B0BX.jpeg"  alt = "Photo number 10 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
+                        
+                                        
+                            
+                                  
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 10; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Z8J2UG7KZBKVILPRPN7DHNQHQUR2BESDRKLINERT.jpeg"  alt = "Photo number 11 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
+                        
+                                        
+                            
+                                  
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 11; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/OGGNXD9YVV5CTP62HM974HEZLZLQV63XDLO5W48U.jpeg"  alt = "Photo number 12 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
+                        
+                                        
+                            
+                                  
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 12; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/J4H822KA6JOZC300VNGQI57QBWTI6TKD83W9VI1G.jpeg"  alt = "Photo number 13 of Superior Auto Spa&#x27;s best work performing a Maintenance Wash job"   loading="lazy" ></div>
+                        
+                                        
+                            
+                                  
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 13; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/HC6DDC9QNMJKBPKK4RTF4B0ALWZWUOWC3ZE7RDPR.jpeg"  alt = "Photo number 14 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
+                        
+                                        
+                            
+                                  
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 14; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/8UW9PLO9MG32PP1DJEBX0ZRCJP6CFPIJCRM64JY4.jpeg"  alt = "Photo number 15 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
+                        
+                                        
+                            
+                                  
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 15; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/FC9WBX3PKB8BPPTR1YY8GNQJLE7JNLPXELL7TUW4.jpeg"  alt = "Photo number 16 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
+                        
+                                        
+                            
+                                  
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 16; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ZCHGXL5UWIYCQAGOHO2N963RP37RT7XY2A7UT5CF.jpeg"  alt = "Photo number 17 of Superior Auto Spa&#x27;s best work performing a Maintenance Wash job"   loading="lazy" ></div>
+                        
+                                        
+                            
+                                  
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 17; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/VQ6DPMBBI7ODJW57U2U1I1CAZBWWI1ZK3GLT2LTM.jpeg"  alt = "Photo number 18 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
+                        
+                                        
+                            
+                                  
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 18; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/O52ROP1QG0VE8FICHGXSKVB1QOA2VJRQL88DY3VN.jpeg"  alt = "Photo number 19 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
+                        
+                                        
+                            
+                                  
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 19; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/WZNVO6DOUTYWZZI8NFKMOD5BKVT9H3TCH689DDP2.jpeg"  alt = "Photo number 20 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
+                        
+                                        
+                            
+                                  
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 20; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/XUJBWQN6HVZNDLQO109BSG28WOTO1GKZDUALS0J4.jpeg"  alt = "Photo number 21 of Superior Auto Spa&#x27;s best work performing a Maintenance Wash job"   loading="lazy" ></div>
+                        
+                     
+                                        
+            
+                    <div class=" z-50 fixed top-0 left-0 w-full h-full flex items-center justify-center" x-show.transition="open" @click.away="open = false" >
+
+
+                    
+                    
+                        <div class="flex items-center justify-start w-12 m-2 ml-6 mb-4 md:m-2 z-50 absolute bottom-0 transform translate-x-12 md:translate-x-32">
+                        <button
+                                class="text-white w-12 h-12 rounded-full flex items-center justify-center focus:outline-none bg-opacity-75 bg-white"                                
+                                @click="open = false">
+                             <span class = "text-black"> <i class="fas fa-lg fa-times"></i> </span>
+                        </button>
+                        </div>
+
+                        <div class= "h-90 w-90 flex items-center justify-center overflow-hidden">
+
+                            <template  x-for="(slide, index, collection) in slides" :key="index">
+                                <div class="h-full w-full flex items-center justify-center absolute">
+                                    <div class="absolute top-0 bottom-0 py-2  px-2 flex flex-col items-center justify-center"
+                                        x-show="activeSlide === index" 
+                                        x-transition:enter="transition ease-out duration-150"
+                                        x-transition:enter-start="opacity-0 transform scale-90"
+                                        x-transition:enter-end="opacity-100 transform scale-100"
+                                        x-transition:leave="transition ease-in duration-150"
+                                        x-transition:leave-start="opacity-100 transform scale-100"
+                                        x-transition:leave-end="opacity-0 transform scale-90">
+
+                                        <template x-if="slide[1] === 'photo' ">
+                                            <img :src="slide[0]" class="object-contain max-w-full max-h-full rounded shadow-lg" />
+                                        </template>
+                                        
+                                        <template x-if="slide[1] != 'photo'  ">
+                                            <video class="object-contain max-w-full max-h-full rounded shadow-lg"  controls> <source :src="slide[0]" >
+                                            </video>
+                                        </template> 
+                                        
+                                    </div>
+                                    <div class="fixed text-white text-sm font-bold bottom-0 transform -translate-x-10 w-40 h-12 mb-2 hidden md:flex justify-center items-center"
+                                        x-show="activeSlide === index">
+                                        <span class="w-12 text-right" x-text="index + 1"></span>
+                                        <span class="w-4 text-center">/</span>
+                                        <span class="w-12 text-left" x-text="slides.length"></span>
+                                    </div>
+                                </div>
+                        </template>
+
+                        <div class="fixed z-50 bottom-0 mb-4 md:mb-2 transform -translate-x-8 md:-translate-x-10 flex justify-center">
+                            <div class="flex items-center justify-end w-12 mr-3 md:mr-16">
+                            <button 
+                                    type="button"
+                                    class="w-12 h-12 rounded-full focus:outline-none flex items-center justify-center bg-opacity-75 bg-white  " 
+                                   
+                                    @click="activeSlide = activeSlide === 0 ? slides.length - 1 : activeSlide - 1">
+                                    <span class = "text-black"> <i class="fas fa-lg fa-chevron-left"></i> </span>
+                               
+                            </button>
+                            </div>
+                            <div class="flex items-center justify-start w-12 md:ml-16">
+                            <button 
+                                    type="button"
+                                    class="text-white font-bold w-12 h-12 rounded-full focus:outline-none flex items-center justify-center bg-opacity-75 bg-white   "
+                                   
+                                    @click="activeSlide = activeSlide === slides.length - 1 ? 0 : activeSlide + 1">
+                               <span class = "text-black"> <i class="fas fa-lg fa-chevron-right"></i> </span>
+                            </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>     
+    
+                
+        </div>
+    </div>
+    
+        
+    
+    <div  style= "background-color:#000000"  id= "testimonials" class="flex items-center justify-center  bg-gray-900 text-white  py-20 min-w-screen px-4">
+        <div class="px-16 ">
+            <div class="container flex flex-col items-center lg:items-startmx-auto lg:items-center">
+                <div class = "sm:mb-4 md:mb-0">
+                <h2  style= "color:#9F0A05"  class="relative flex  text-gray-400 text-center sm:justify-center sm:mb-8 md:justify-start w-full text-lg font-bold tracking-wider uppercase lg:justify-center lg:items-center mb-10">Don&#x27;t just take our word for it</h2>
+                </div>
+
+
+                <h2 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide text-center ">
+                    
+                    Testimonials &amp; Reviews</h2>
+                <div class="block w-full h-1 max-w-lg mt-6 bg-purple-100 rounded-full"></div>
+                
+                
+
+                <div class="items-start justify-start w-full mt-12 mb-4 lg:flex lg:flex-wrap">
+
+                    
+            
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h3 class="font-bold  text-white  ">Devin Weiskopf</h3>
+                            <h3 class=" text-white ">Chalmette, LA  , Full Detail Service  </h3>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"Quality service! Skips no steps and vehicle comes out looking like new!"</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+            
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h3 class="font-bold  text-white  ">Jamie Snowberger</h3>
+                            <h3 class=" text-white ">New Orleans, LA  , Full Detail Service  </h3>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"Wonderful! The price for what what my car looked afterwards is amazing, outside and interior"</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+            
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h3 class="font-bold  text-white  ">Wendel Delatte</h3>
+                            <h3 class=" text-white ">New Orleans, LA  , Ceramic Coating  </h3>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"Superior Auto Spa did an awesome job Detailing and Ceramic Coating my 2020 F250 looked better than it did on The day I bought it"</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+            
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h3 class="font-bold  text-white  ">Joe Rodriguez</h3>
+                            <h3 class=" text-white ">New Orleans  , Ceramic Coating  </h3>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"About a year since the ceramic coating and it’s still like the day he left it, awesome work, def havjng Dylan bring my truck to superior quality after paint 😘"</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+            
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h3 class="font-bold  text-white  ">Steven McInnis</h3>
+                            <h3 class=" text-white ">Saint Bernard, LA  , Ceramic Coating  </h3>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"Superior Auto Spa details my vehicles twice a month and i have never been disappointed. I also had a 5 year ceramic coating done and it was flawless. I would 10/10 recommend these guys. The customer service is outstanding and they will make sure to satisfy your every need."</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+            
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h3 class="font-bold  text-white  ">Brandon Wall</h3>
+                            <h3 class=" text-white ">Raceland, LA  , Ceramic Coating  </h3>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"Great customer service and great quality work superior auto has ceramic coated my boat and truck and I will never use anyone else again definitely my go to detailer!"</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+                </div>  
+                
+                <div class = "flex flex-col space-y-5 md:flex-row md:space-x-5 md:space-y-0 ">
+                
+                <a target= "_blank" href="https://www.facebook.com/SuperiorAutoSpaNola/reviews/">
+                    <button  
+                onMouseOver="this.style.backgroundColor='white'; this.style.color='#000000' "
+                onMouseOut="this.style.backgroundColor='#9F0A05'; this.style.color='white'"
+                style="background-color:#9F0A05; color:white"               
+                
+                   type="button" class="inline-flex w-full items-center justify-center h-16 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none   text-black  bg-gray-400  hover:bg-white hover:text-gray-900 ">
+                            <h5 class="text-2xl font-extrabold">Leave a Review</h5> 
+                    </button>
+                </a>
+                
+             
+                
+                <a target= "_blank" href="https://www.facebook.com/SuperiorAutoSpaNola/reviews/">
+                    <button  
+                onMouseOver="this.style.backgroundColor='white'; this.style.color='#000000' "
+                onMouseOut="this.style.backgroundColor='#9F0A05'; this.style.color='white'"
+                style="background-color:#9F0A05; color:white"               
+                
+                  type="button" class="inline-flex w-full   items-center justify-center h-16 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none   text-black  bg-gray-400  hover:bg-white hover:text-gray-900 ">
+                            <h5 class="text-2xl font-extrabold">See More Reviews</h5> 
+                    </button>
+                </a>
+               
+            </div>
+
+                         
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+<section id= "faqs" class="py-16   bg-white text-gray-900  md:py-20 lg:py-24">
+    <div class="max-w-5xl px-12 mx-auto xl:px-0">
+
+        <h2  style= "color:#000000"  class="mb-5 text-3xl  mx-auto text-center font-extrabold leading-none sm:text-4xl lg:text-7xl">Faqs</h2>
+         <h2  style= "color:#9F0A05"  class="my-3 mb-10  text-xl font-medium  text-gray-400 text-center">Your questions answered</h2>
+
+        <div class="relative mt-12 space-y-3">
+
+        
+
+            <!-- Question 1 -->
+            <div x-data="{ show: false }" class="relative overflow-hidden border-b border-gray-100 select-none">
+                <h3  
+                onMouseOver="this.style.color='#9F0A05' "
+                onMouseOut=" this.style.color='#000000'"
+                style="color:#000000;"               
+                
+                                 
+                @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-gray-900  cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-gray-400  lg:text-left">
+                    <span class = "flex text-left lg:text-left">What is the best way to get a quote?</span>
+                    <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </h3>
+                <p  style= "color:#000000"  class="px-2 pt-0 -mt-2  sm:text-lg py-7 text-gray-900 text-center lg:text-left"
+                    x-transition:enter="transition-all ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform -translate-y-4"
+                    x-transition:enter-end="opacity-100 transform -translate-y-0"
+                    x-transition:leave="transition-all ease-in duration-300"
+                    x-transition:leave-start="opacity-100 transform -translate-y-0"
+                    x-transition:leave-end="opacity-0 transform -translate-y-4"
+                    x-show="show"
+                    x-cloak>The best way to get in touch is to call or text (504) 439-5841. We provide personal attention to every customer.</p>
+            </div>
+
+        
+
+        </div>
+    </div>
+</section>
+
+    
+
+<div id="service-area-array" class = "hidden">
+
+    
+        [[&#x27;New Orleans&#x27;, &#x27;LA&#x27;, 50]]
+        <div class="city"> New Orleans </div>
+        <div class="state"> LA </div>
+        <div class="radius"> 50 </div>
+    
+</div> 
+
+<section id="find-us" class="py-16   bg-white text-gray-900  md:py-20 lg:py-20">
+
+   
+   
+    <div class="max-w-5xl px-12 mx-auto text-center xl:px-0">
+   
+
+    <h2  style= "color:#000000"   class="mb-5 text-3xl  mx-auto text-center font-extrabold leading-none sm:text-4xl lg:text-7xl"> Service Areas </h2>
+    <h2  style= "color:#9F0A05"  class="my-3 mb-10  text-xl font-medium text-gray-400 text-center"> Proudly Serving   New Orleans & Surrounding Areas   </h2>
+    <div style="height:500px; width:100%;" id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSw3qRocbSgfTrtxZbCsTjSHZaaJuUXF4&callback=initMap&libraries=&v=weekly"
+      async
+    ></script> 
+
+
+    
+    </div>
+</section>
+
+
+
+    <section  style= "background-color:#000000"   class="py-10 bg-gray-900">
+    
+        <div class="flex flex-col justify-around text-center md:flex-row">
+            <p class="order-last text-sm leading-tight text-gray-400 md:order-first"> Crafted with <a  href="https://www.prophone.com/prosite" class="  text-white ">ProPhone</a>. Built with ❤️ by our team. </p>
+             
+            <ul class="flex flex-row flex-wrap text-center justify-center pb-3 lg:-ml-4 lg:-mr-4 text-sm">
+                <li> <a  style= "color:#9F0A05"  href="#about" class="px-2 md:px-4 text-gray-400 hover:text-white">About Us</a> </li>
+                
+                <li> <a   style= "color:#9F0A05" href="#services" class="px-2 md:px-4 text-gray-400 hover:text-white">Our Services</a> </li>
+                
+                
+                <li> <a style= "color:#9F0A05"   href="#our-work" class=" px-2 md:px-4 text-gray-400 hover:text-white">Our Best Work</a> </li>
+                
+                
+                <li> <a  style= "color:#9F0A05"  href="#testimonials" class="px-2 md:px-4 text-gray-400 hover:text-white">Testimonials &amp; Reviews</a></li>
+                
+                
+                <li> <a  style= "color:#9F0A05"  href="#faqs" class="px-2 md:px-4 text-gray-400 hover:text-white">Faqs</a></li>
+                
+                
+                
+                <li> <a  style= "color:#9F0A05"  href="#find-us" class=" px-2 md:px-4 text-gray-400 hover:text-white">Service Areas</a></li>
+                
+            </ul>
+        </div>
+    </div>
+</section>     
+</div> 
+
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+  
+
+</body>
+</html>
+
+
+
+
+
+
+
+
