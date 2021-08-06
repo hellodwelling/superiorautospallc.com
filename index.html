@@ -46,11 +46,11 @@
 
 
 <div class = "flex w-full flex-col">  
-    <div  class="fixed z-40 w-full lg:h-25 lg:py-4 items-start justify-start  bg-white text-gray-700  dark-mode:text-gray-200 dark-mode:bg-gray-800">
+    <div class="fixed z-40 w-full lg:h-25 lg:py-4 items-start justify-start  bg-white text-gray-700  dark-mode:text-gray-200 dark-mode:bg-gray-800">
   <div x-data="{ open: false }" class="flex flex-col lg:flex-r max-w-screen-xl px-4 mx-auto lg:items-center lg:justify-between lg:flex-row lg:px-6 lg:px-8">
     <div class="py-4 flex flex-row items-center justify-between">
       
-        <a href="#about"> <img class="h-16 w-auto relative" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/VPFI1HCBGW9VUAIYTA54EBJPN356NCDZEIXIRRYM.jpeg" alt="Superior Auto Spa logo"> </a>
+        <a href= " #about "> <img class="h-16 w-auto relative" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/VPFI1HCBGW9VUAIYTA54EBJPN356NCDZEIXIRRYM.jpeg" alt="Superior Auto Spa logo"> </a>
       
       <button class="lg:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
         <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
@@ -59,7 +59,8 @@
         </svg>
       </button>
     </div>
-    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 lg:pb-0 hidden lg:flex lg:justify-end lg:flex-row">
+    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 lg:pb-0 hidden lg:flex lg:flex-row  lg:justify-end ">
+    
       
 <a 
     class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
@@ -97,16 +98,16 @@
     class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
     href="#find-us">Service Areas
 </a>
-     
+   
+    
+  
 
-      
-         <div class = "px-4 py-2 lg:pb-3 mt-2 text-xl font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"x-data="{open: false}">
-        
-            <a target = "_blank"  x-on:click.prevent="open = true" class="" href="">Send us a Text</a>
-      
 
-              
-        <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
+    
+      <div class = "px-4 py-2 lg:pb-3 mt-2 text-xl font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline "x-data="{open: false}">
+      
+          <a target = "_blank"  x-on:click.prevent="open = true" class="" href="">Send us a Text</a>
+            <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
     <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
             <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
         <div class="block mb-4 border border-gray-200 rounded-lg">
@@ -135,6 +136,9 @@
 
     </form>
 </div>
+           
+      
+        
     </nav>
   </div>
 </div>
@@ -152,21 +156,32 @@ class="flex relative flex-col w-full  bg-gray-900 text-white  lg:flex-row lg:fle
             
             <h2 class="py-5 mb-5 lg:text-xl text-center lg:text-left">
             </h2>
-            <div id="cover-button">
-                 
-            <div id="" class="flex text-center justify-center items-center z-50" x-data="{open: false}">
+            
+            <div class="flex flex-col lg:flex-row flex-grow flex-col space-y-5 md:space-y-0 w-full lg:w-auto md:space-y-5 lg:space-y-0">
+                <div class=" w-full lg:w-auto">
                 
+  
+                </div>
+
+                <div id="cover-button" class="w-full lg:w-auto ">
+                    
+ 
+    <div id="" class="flex text-center justify-center items-center z-50 w-full lg:w-auto " x-data="{open: false}">
+        
 <button 
  
     onMouseOver="this.style.backgroundColor='white'; this.style.color='#000000' "
     onMouseOut="this.style.backgroundColor='#9F0A05'; this.style.color='white'"
     style="background-color:#9F0A05; color:white"               
 
- id="" type="button" x-on:click.prevent="open = true" class=" inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-gray-400 text-white hover:bg-white hover:text-gray-900">
+ id="" type="button" x-on:click.prevent="open = true" class=" 
+  w-full lg:w-auto 
+
+    inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-gray-400 text-white hover:bg-white hover:text-gray-900">
     <h5 class="text-3xl font-extrabold">Send us a Text</h5> 
 </button>
 
-                <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
+        <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
     <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
             <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
         <div class="block mb-4 border border-gray-200 rounded-lg">
@@ -195,26 +210,29 @@ class="flex relative flex-col w-full  bg-gray-900 text-white  lg:flex-row lg:fle
 
     </form>
 </div>
-
-            </div>
+    </div>
  
-            </div>
+                </div>
 
-            <div >
-                 
-            <div id="" class="flex text-center justify-center items-center z-50" x-data="{open: false}">
-                
+                <div>
+                    
+ 
+    <div id="" class="flex text-center justify-center items-center z-50 w-full lg:w-auto " x-data="{open: false}">
+        
 <button 
  
     onMouseOver="this.style.backgroundColor='white'; this.style.color='#000000' "
     onMouseOut="this.style.backgroundColor='#9F0A05'; this.style.color='white'"
     style="background-color:#9F0A05; color:white"               
 
- id="side-button" type="button" x-on:click.prevent="open = true" class="mb-3 fixed bottom-0 -right-80 z-10 mr-3 md:mr-0 z-50 inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-gray-400 text-white hover:bg-white hover:text-gray-900">
+ id="side-button" type="button" x-on:click.prevent="open = true" class=" 
+  
+
+   mb-3 fixed bottom-0 -right-80 z-10 mr-3 lg:mr-0 z-50 inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-gray-400 text-white hover:bg-white hover:text-gray-900">
     <h5 class="text-3xl font-extrabold">Send us a Text</h5> 
 </button>
 
-                <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
+        <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
     <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
             <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
         <div class="block mb-4 border border-gray-200 rounded-lg">
@@ -243,8 +261,9 @@ class="flex relative flex-col w-full  bg-gray-900 text-white  lg:flex-row lg:fle
 
     </form>
 </div>
+    </div>
 
-            </div>
+                </div>
 
             </div>
         </div>
@@ -294,9 +313,11 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
             </div>
             
                 <div class = "mt-10 mb-0 flex flex-row justify-center lg:justify-start text-center w-full lg:max-w-lg">
+                
                     <h2  style= "color:#000000 "  class="mb-3 text-4xl justify-center lg:justify-start text-center lg:text-left text-gray-900 font-extrabold leading-none tracking-wide text-center">
                         Connect with us on Social
                     </h2>
+                
                 </div>
                 <div class = "flex flex-row mb-5 justify-center space-x-3 md:space-x-8 lg:space-x-12 lg:flex-nowrap mt-4   w-full lg:max-w-lg">
                     
@@ -350,8 +371,9 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
     </section>
     
     
+    
     <section  style= "background-color:#000000"   id= "services" class="lg:mt-0 relative w-full px-8 font-sans leading-6  bg-gray-900 border-0 border-gray-200 text-white border-solid ">
-        <div class="flex flex-col items-center max-w-6xl px-8 py-20 mx-auto leading-6 border-solid md:items-stretch md:justify-center md:py-24">
+        <div class="flex flex-col items-center max-w-6xl px-8 py-20 mx-auto leading-6 border-solid md:items-stretch md:justify-center md:py-24 ">
             
             <h2 class="mb-3 lg:pr-9 text-3xl mx-auto font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide text-center">
                 Our Services
@@ -408,199 +430,205 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
     </section>
     
     
-        <div id="our-work" class="relative mb-0 w-full pt-12 overflow-hidden  bg-white text-gray-900   md:pt-20 xl:pt-20 xl:pb-20">
-            <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
-                <h2  style= "color:#000000" class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Our Best Work</h2>
-                <h2  style= "color:#9F0A05" class="my-3 mb-10 text-xl font-medium  text-gray-400  text-center">See why our customers love us</h2>
-                <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [     [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/H2MMUTW8RK4EV4QCIE7PNUI50995KK7ZQ8CNRVNI.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/Z9PZO35GOTUB0M74DX7LSEDDZ75VO1ADFP6BAT8V.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/O0BK22MJJ4VN670FGBIGY3SM1OXHSDW0BWY1EGWQ.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/QAOMODSSKC3O1762S2QWVJRNRWDZFXWGYTF93Z9E.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/N6EXKNQGEYRV9C7JP29JT1UADFJXW0T7CENVOXOD.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/X3GH3EIGLFKSI134HDC4WAZR5MXNGZT9GK4D7ECE.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/007QZR3ZQ96PXYMC5I78EXBCAISPRS44HL5NYAN5.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/R11HNJDFPY96RLUF6AOSYG3VBUINNC7VW648D32N.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/F2WRRJ4W4RMW39EDQ46YYRKHG3W8YSJCZDS5B0BX.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/Z8J2UG7KZBKVILPRPN7DHNQHQUR2BESDRKLINERT.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/OGGNXD9YVV5CTP62HM974HEZLZLQV63XDLO5W48U.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/J4H822KA6JOZC300VNGQI57QBWTI6TKD83W9VI1G.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/HC6DDC9QNMJKBPKK4RTF4B0ALWZWUOWC3ZE7RDPR.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/8UW9PLO9MG32PP1DJEBX0ZRCJP6CFPIJCRM64JY4.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/FC9WBX3PKB8BPPTR1YY8GNQJLE7JNLPXELL7TUW4.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/ZCHGXL5UWIYCQAGOHO2N963RP37RT7XY2A7UT5CF.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/VQ6DPMBBI7ODJW57U2U1I1CAZBWWI1ZK3GLT2LTM.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/O52ROP1QG0VE8FICHGXSKVB1QOA2VJRQL88DY3VN.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/WZNVO6DOUTYWZZI8NFKMOD5BKVT9H3TCH689DDP2.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/XUJBWQN6HVZNDLQO109BSG28WOTO1GKZDUALS0J4.jpeg', 'photo'],   ] }" @keydown.escape= "open = false"   >
-                                        
-                        
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40">
-                                <video class="rounded shadow-md object-cover w-full h-60" loading="lazy" controls> <source src="https://landing-page-app-hero-images.s3.amazonaws.com/media/3IZBX9NFYW6MQWTX7CLWOMY51HRTYHKRB02CXPTK.mp4" >
-                                </video>
-                            </div>
-                        
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 1; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/H2MMUTW8RK4EV4QCIE7PNUI50995KK7ZQ8CNRVNI.jpeg"  alt = "Photo number 2 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
-                        
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 2; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Z9PZO35GOTUB0M74DX7LSEDDZ75VO1ADFP6BAT8V.jpeg"  alt = "Photo number 3 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
-                        
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 3; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/O0BK22MJJ4VN670FGBIGY3SM1OXHSDW0BWY1EGWQ.jpeg"  alt = "Photo number 4 of Superior Auto Spa&#x27;s best work performing a Maintenance Wash job"   loading="lazy" ></div>
-                        
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 4; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/QAOMODSSKC3O1762S2QWVJRNRWDZFXWGYTF93Z9E.jpeg"  alt = "Photo number 5 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
-                        
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 5; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/N6EXKNQGEYRV9C7JP29JT1UADFJXW0T7CENVOXOD.jpeg"  alt = "Photo number 6 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
-                        
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 6; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/X3GH3EIGLFKSI134HDC4WAZR5MXNGZT9GK4D7ECE.jpeg"  alt = "Photo number 7 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
-                        
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 7; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/007QZR3ZQ96PXYMC5I78EXBCAISPRS44HL5NYAN5.jpeg"  alt = "Photo number 8 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
-                        
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 8; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/R11HNJDFPY96RLUF6AOSYG3VBUINNC7VW648D32N.jpeg"  alt = "Photo number 9 of Superior Auto Spa&#x27;s best work performing a Maintenance Wash job"   loading="lazy" ></div>
-                        
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 9; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/F2WRRJ4W4RMW39EDQ46YYRKHG3W8YSJCZDS5B0BX.jpeg"  alt = "Photo number 10 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
-                        
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 10; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Z8J2UG7KZBKVILPRPN7DHNQHQUR2BESDRKLINERT.jpeg"  alt = "Photo number 11 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
-                        
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 11; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/OGGNXD9YVV5CTP62HM974HEZLZLQV63XDLO5W48U.jpeg"  alt = "Photo number 12 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
-                        
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 12; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/J4H822KA6JOZC300VNGQI57QBWTI6TKD83W9VI1G.jpeg"  alt = "Photo number 13 of Superior Auto Spa&#x27;s best work performing a Maintenance Wash job"   loading="lazy" ></div>
-                        
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 13; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/HC6DDC9QNMJKBPKK4RTF4B0ALWZWUOWC3ZE7RDPR.jpeg"  alt = "Photo number 14 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
-                        
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 14; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/8UW9PLO9MG32PP1DJEBX0ZRCJP6CFPIJCRM64JY4.jpeg"  alt = "Photo number 15 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
-                        
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 15; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/FC9WBX3PKB8BPPTR1YY8GNQJLE7JNLPXELL7TUW4.jpeg"  alt = "Photo number 16 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
-                        
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 16; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ZCHGXL5UWIYCQAGOHO2N963RP37RT7XY2A7UT5CF.jpeg"  alt = "Photo number 17 of Superior Auto Spa&#x27;s best work performing a Maintenance Wash job"   loading="lazy" ></div>
-                        
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 17; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/VQ6DPMBBI7ODJW57U2U1I1CAZBWWI1ZK3GLT2LTM.jpeg"  alt = "Photo number 18 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
-                        
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 18; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/O52ROP1QG0VE8FICHGXSKVB1QOA2VJRQL88DY3VN.jpeg"  alt = "Photo number 19 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
-                        
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 19; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/WZNVO6DOUTYWZZI8NFKMOD5BKVT9H3TCH689DDP2.jpeg"  alt = "Photo number 20 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
-                        
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 20; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/XUJBWQN6HVZNDLQO109BSG28WOTO1GKZDUALS0J4.jpeg"  alt = "Photo number 21 of Superior Auto Spa&#x27;s best work performing a Maintenance Wash job"   loading="lazy" ></div>
-                        
-                     
-                                        
-            
-                    <div class=" z-50 fixed top-0 left-0 w-full h-full flex items-center justify-center" x-show.transition="open" @click.away="open = false" >
+    
 
-
+    <div id="our-work" class="relative mb-0 w-full pt-12 overflow-hidden   bg-white text-gray-900   md:pt-20 xl:pt-20 xl:pb-20">
+        <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
+            <h2  style= "color:#000000" class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Our Best Work</h2>
+            <h2  style= "color:#9F0A05" class="my-3 mb-10 text-xl font-medium  text-gray-400  text-center">See why our customers love us</h2>
+            <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [   [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/8PLVMZMFH8GC0Q3VH5O3US174NH2QRJHVVN82536.jpeg', 'photo'],      [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/H2MMUTW8RK4EV4QCIE7PNUI50995KK7ZQ8CNRVNI.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/Z9PZO35GOTUB0M74DX7LSEDDZ75VO1ADFP6BAT8V.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/O0BK22MJJ4VN670FGBIGY3SM1OXHSDW0BWY1EGWQ.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/QAOMODSSKC3O1762S2QWVJRNRWDZFXWGYTF93Z9E.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/N6EXKNQGEYRV9C7JP29JT1UADFJXW0T7CENVOXOD.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/X3GH3EIGLFKSI134HDC4WAZR5MXNGZT9GK4D7ECE.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/007QZR3ZQ96PXYMC5I78EXBCAISPRS44HL5NYAN5.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/R11HNJDFPY96RLUF6AOSYG3VBUINNC7VW648D32N.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/F2WRRJ4W4RMW39EDQ46YYRKHG3W8YSJCZDS5B0BX.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/Z8J2UG7KZBKVILPRPN7DHNQHQUR2BESDRKLINERT.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/OGGNXD9YVV5CTP62HM974HEZLZLQV63XDLO5W48U.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/J4H822KA6JOZC300VNGQI57QBWTI6TKD83W9VI1G.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/HC6DDC9QNMJKBPKK4RTF4B0ALWZWUOWC3ZE7RDPR.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/8UW9PLO9MG32PP1DJEBX0ZRCJP6CFPIJCRM64JY4.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/ZCHGXL5UWIYCQAGOHO2N963RP37RT7XY2A7UT5CF.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/VQ6DPMBBI7ODJW57U2U1I1CAZBWWI1ZK3GLT2LTM.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/O52ROP1QG0VE8FICHGXSKVB1QOA2VJRQL88DY3VN.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/WZNVO6DOUTYWZZI8NFKMOD5BKVT9H3TCH689DDP2.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/XUJBWQN6HVZNDLQO109BSG28WOTO1GKZDUALS0J4.jpeg', 'photo'],   ] }" @keydown.escape= "open = false"   >
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 0; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/8PLVMZMFH8GC0Q3VH5O3US174NH2QRJHVVN82536.jpeg"  alt = "Photo number 1 of Superior Auto Spa&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
+                                    
                     
-                        <div class="flex items-center justify-start w-12 m-2 ml-6 mb-4 md:m-2 z-50 absolute bottom-0 transform translate-x-12 md:translate-x-32">
-                        <button
-                                class="text-white w-12 h-12 rounded-full flex items-center justify-center focus:outline-none bg-opacity-75 bg-white"                                
-                                @click="open = false">
-                             <span class = "text-black"> <i class="fas fa-lg fa-times"></i> </span>
-                        </button>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40">
+                            <video class="rounded shadow-md object-cover w-full h-60" loading="lazy" controls> <source src="https://landing-page-app-hero-images.s3.amazonaws.com/media/3IZBX9NFYW6MQWTX7CLWOMY51HRTYHKRB02CXPTK.mp4" >
+                            </video>
                         </div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 2; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/H2MMUTW8RK4EV4QCIE7PNUI50995KK7ZQ8CNRVNI.jpeg"  alt = "Photo number 3 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 3; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Z9PZO35GOTUB0M74DX7LSEDDZ75VO1ADFP6BAT8V.jpeg"  alt = "Photo number 4 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 4; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/O0BK22MJJ4VN670FGBIGY3SM1OXHSDW0BWY1EGWQ.jpeg"  alt = "Photo number 5 of Superior Auto Spa&#x27;s best work performing a Maintenance Wash job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 5; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/QAOMODSSKC3O1762S2QWVJRNRWDZFXWGYTF93Z9E.jpeg"  alt = "Photo number 6 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 6; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/N6EXKNQGEYRV9C7JP29JT1UADFJXW0T7CENVOXOD.jpeg"  alt = "Photo number 7 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 7; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/X3GH3EIGLFKSI134HDC4WAZR5MXNGZT9GK4D7ECE.jpeg"  alt = "Photo number 8 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 8; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/007QZR3ZQ96PXYMC5I78EXBCAISPRS44HL5NYAN5.jpeg"  alt = "Photo number 9 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 9; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/R11HNJDFPY96RLUF6AOSYG3VBUINNC7VW648D32N.jpeg"  alt = "Photo number 10 of Superior Auto Spa&#x27;s best work performing a Maintenance Wash job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 10; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/F2WRRJ4W4RMW39EDQ46YYRKHG3W8YSJCZDS5B0BX.jpeg"  alt = "Photo number 11 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 11; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Z8J2UG7KZBKVILPRPN7DHNQHQUR2BESDRKLINERT.jpeg"  alt = "Photo number 12 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 12; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/OGGNXD9YVV5CTP62HM974HEZLZLQV63XDLO5W48U.jpeg"  alt = "Photo number 13 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 13; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/J4H822KA6JOZC300VNGQI57QBWTI6TKD83W9VI1G.jpeg"  alt = "Photo number 14 of Superior Auto Spa&#x27;s best work performing a Maintenance Wash job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 14; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/HC6DDC9QNMJKBPKK4RTF4B0ALWZWUOWC3ZE7RDPR.jpeg"  alt = "Photo number 15 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 15; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/8UW9PLO9MG32PP1DJEBX0ZRCJP6CFPIJCRM64JY4.jpeg"  alt = "Photo number 16 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 16; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ZCHGXL5UWIYCQAGOHO2N963RP37RT7XY2A7UT5CF.jpeg"  alt = "Photo number 17 of Superior Auto Spa&#x27;s best work performing a Maintenance Wash job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 17; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/VQ6DPMBBI7ODJW57U2U1I1CAZBWWI1ZK3GLT2LTM.jpeg"  alt = "Photo number 18 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 18; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/O52ROP1QG0VE8FICHGXSKVB1QOA2VJRQL88DY3VN.jpeg"  alt = "Photo number 19 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 19; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/WZNVO6DOUTYWZZI8NFKMOD5BKVT9H3TCH689DDP2.jpeg"  alt = "Photo number 20 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 20; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/XUJBWQN6HVZNDLQO109BSG28WOTO1GKZDUALS0J4.jpeg"  alt = "Photo number 21 of Superior Auto Spa&#x27;s best work performing a Maintenance Wash job"   loading="lazy" ></div>
+                    
+                 
+                                    
+        
+                <div class="z-50 fixed top-0 left-0 w-full h-full flex items-center justify-center" x-show.transition="open" >
 
-                        <div class= "h-90 w-90 flex items-center justify-center overflow-hidden">
 
-                            <template  x-for="(slide, index, collection) in slides" :key="index">
-                                <div class="h-full w-full flex items-center justify-center absolute">
-                                    <div class="absolute top-0 bottom-0 py-2  px-2 flex flex-col items-center justify-center"
-                                        x-show="activeSlide === index" 
-                                        x-transition:enter="transition ease-out duration-150"
-                                        x-transition:enter-start="opacity-0 transform scale-90"
-                                        x-transition:enter-end="opacity-100 transform scale-100"
-                                        x-transition:leave="transition ease-in duration-150"
-                                        x-transition:leave-start="opacity-100 transform scale-100"
-                                        x-transition:leave-end="opacity-0 transform scale-90">
+                
+                
+                    <div class="flex items-center justify-start w-12  ml-6 md:m-2 z-50 absolute bottom-1/4 md:bottom-0 transform translate-x-12 md:translate-x-32" >
+                    <button
+                     style= "background-color:#9F0A05" 
+                            class="text-white w-12 h-12 rounded-full flex items-center justify-center focus:outline-none bg-gray-400"                                
+                            @click="open = false">
+                         <span class = "text-white"> <i class="fas fa-lg fa-times"></i> </span>
+                    </button>
+                    </div>
 
-                                        <template x-if="slide[1] === 'photo' ">
-                                            <img :src="slide[0]" class="object-contain max-w-full max-h-full rounded shadow-lg" />
-                                        </template>
-                                        
-                                        <template x-if="slide[1] != 'photo'  ">
-                                            <video class="object-contain max-w-full max-h-full rounded shadow-lg"  controls> <source :src="slide[0]" >
-                                            </video>
-                                        </template> 
-                                        
-                                    </div>
-                                    <div class="fixed text-white text-sm font-bold bottom-0 transform -translate-x-10 w-40 h-12 mb-2 hidden md:flex justify-center items-center"
-                                        x-show="activeSlide === index">
-                                        <span class="w-12 text-right" x-text="index + 1"></span>
-                                        <span class="w-4 text-center">/</span>
-                                        <span class="w-12 text-left" x-text="slides.length"></span>
-                                    </div>
+                    <div class= "h-90 w-90 flex items-center justify-center overflow-hidden">
+
+                        <template  x-for="(slide, index, collection) in slides" :key="index">
+                            <div class="h-full w-full flex items-center justify-center absolute">
+                                <div class="absolute top-0 bottom-0 py-2  px-2 flex flex-col items-center justify-center"
+                                    x-show="activeSlide === index" 
+                                    x-transition:enter="transition ease-out duration-150"
+                                    x-transition:enter-start="opacity-0 transform scale-90"
+                                    x-transition:enter-end="opacity-100 transform scale-100"
+                                    x-transition:leave="transition ease-in duration-150"
+                                    x-transition:leave-start="opacity-100 transform scale-100"
+                                    x-transition:leave-end="opacity-0 transform scale-90">
+
+                                    <template x-if="slide[1] === 'photo' ">
+                                        <img :src="slide[0]" class="object-contain max-w-full max-h-full rounded shadow-lg" />
+                                    </template>
+                                    
+                                    <template x-if="slide[1] != 'photo'  ">
+                                        <video class="object-contain max-w-full max-h-full rounded shadow-lg"  controls> <source :src="slide[0]" >
+                                        </video>
+                                    </template> 
+                                    
                                 </div>
+                                <div  style= "color:#9F0A05"  class="fixed text-gray-400 text-sm font-bold bottom-0 transform -translate-x-10 w-40 h-12 mb-2 hidden md:flex justify-center items-center"
+                                    x-show="activeSlide === index">
+                                    <span class="w-12 text-right" x-text="index + 1"></span>
+                                    <span class="w-4 text-center">/</span>
+                                    <span class="w-12 text-left" x-text="slides.length"></span>
+                                </div>
+                            </div>
                         </template>
 
-                        <div class="fixed z-50 bottom-0 mb-4 md:mb-2 transform -translate-x-8 md:-translate-x-10 flex justify-center">
-                            <div class="flex items-center justify-end w-12 mr-3 md:mr-16">
-                            <button 
-                                    type="button"
-                                    class="w-12 h-12 rounded-full focus:outline-none flex items-center justify-center bg-opacity-75 bg-white  " 
-                                   
-                                    @click="activeSlide = activeSlide === 0 ? slides.length - 1 : activeSlide - 1">
-                                    <span class = "text-black"> <i class="fas fa-lg fa-chevron-left"></i> </span>
+                    <div class="fixed md:fixed z-50 absolute bottom-1/4 md:bottom-0 md:mb-2 transform -translate-x-8 md:-translate-x-10 flex justify-center" @click.away="open = false">
+                        <div class="flex items-center justify-end w-12 mr-3 md:mr-16">
+                        <button 
+                                type="button"
+                                 style= "background-color:#9F0A05" 
+                                class="w-12 h-12 rounded-full focus:outline-none flex items-center justify-center bg-gray-400" 
                                
-                            </button>
-                            </div>
-                            <div class="flex items-center justify-start w-12 md:ml-16">
-                            <button 
-                                    type="button"
-                                    class="text-white font-bold w-12 h-12 rounded-full focus:outline-none flex items-center justify-center bg-opacity-75 bg-white   "
-                                   
-                                    @click="activeSlide = activeSlide === slides.length - 1 ? 0 : activeSlide + 1">
-                               <span class = "text-black"> <i class="fas fa-lg fa-chevron-right"></i> </span>
-                            </button>
-                            </div>
+                                @click="activeSlide = activeSlide === 0 ? slides.length - 1 : activeSlide - 1">
+                                <span class = "text-white"> <i class="fas fa-lg fa-chevron-left"></i> </span>
+                           
+                        </button>
                         </div>
-
+                        <div class="flex items-center justify-start w-12 md:ml-16">
+                        <button 
+                                type="button"
+                                 style= "background-color:#9F0A05" 
+                                class="text-white font-bold w-12 h-12 rounded-full focus:outline-none flex items-center justify-center  bg-gray-400   "
+                               
+                                @click="activeSlide = activeSlide === slides.length - 1 ? 0 : activeSlide + 1">
+                           <span class = "text-white"> <i class="fas fa-lg fa-chevron-right"></i> </span>
+                        </button>
+                        </div>
                     </div>
+
                 </div>
-            </div>     
-    
-                
-        </div>
-    </div>
-    
+            </div>
+            </div>
+        </div>     
+
+            
+</div>
+
         
     
-    <div  style= "background-color:#000000"  id= "testimonials" class="flex items-center justify-center  bg-gray-900 text-white  py-20 min-w-screen px-4">
+    
+    <div  style= "background-color:#000000"  id= "testimonials" class=" flex items-center justify-center  bg-gray-900 text-white  py-20 min-w-screen px-4">
         <div class="px-16 ">
             <div class="container flex flex-col items-center lg:items-startmx-auto lg:items-center">
                 <div class = "sm:mb-4 md:mb-0">
@@ -796,7 +824,7 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
                 
                 <div class = "flex flex-col space-y-5 md:flex-row md:space-x-5 md:space-y-0 ">
                 
-                <a target= "_blank" href="https://www.facebook.com/SuperiorAutoSpaNola/reviews/">
+                <a target= "_blank" href="https://www.facebook.com/SuperiorAutoSpaNola/reviews/"  class="w-full">
                     <button  
                 onMouseOver="this.style.backgroundColor='white'; this.style.color='#000000' "
                 onMouseOut="this.style.backgroundColor='#9F0A05'; this.style.color='white'"
@@ -809,13 +837,13 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
                 
              
                 
-                <a target= "_blank" href="https://www.facebook.com/SuperiorAutoSpaNola/reviews/">
+                <a target= "_blank" href="https://www.facebook.com/SuperiorAutoSpaNola/reviews/" class="w-full">
                     <button  
                 onMouseOver="this.style.backgroundColor='white'; this.style.color='#000000' "
                 onMouseOut="this.style.backgroundColor='#9F0A05'; this.style.color='white'"
                 style="background-color:#9F0A05; color:white"               
                 
-                  type="button" class="inline-flex w-full   items-center justify-center h-16 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none   text-black  bg-gray-400  hover:bg-white hover:text-gray-900 ">
+                  type="button" class="inline-flex w-full  items-center justify-center h-16 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none   text-black  bg-gray-400  hover:bg-white hover:text-gray-900 ">
                             <h5 class="text-2xl font-extrabold">See More Reviews</h5> 
                     </button>
                 </a>
