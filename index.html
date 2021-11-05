@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Superior Auto Spa" property="og:title">
+
     
         <meta content="https://landing-page-app-hero-images.s3.amazonaws.com/media/VPFI1HCBGW9VUAIYTA54EBJPN356NCDZEIXIRRYM.jpeg" property="og:image">
         <meta content="Superior Auto Spa" property="twitter:title">
@@ -108,7 +109,7 @@
       
           <a target = "_blank"  x-on:click.prevent="open = true" class="" href="">Send us a Text</a>
             <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
-    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
+    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5 z-50">
             <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
         <div class="block mb-4 border border-gray-200 rounded-lg">
             <input type="text" name="first-name" id="0-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
@@ -166,7 +167,7 @@ class="flex relative flex-col w-full  bg-gray-900 text-white  lg:flex-row lg:fle
                 <div id="cover-button" class="w-full lg:w-auto ">
                     
  
-    <div id="" class="flex text-center justify-center items-center z-50 w-full lg:w-auto " x-data="{open: false}">
+    <div id="" class="flex text-center justify-center items-center  w-full lg:w-auto " x-data="{open: false}">
         
 <button 
  
@@ -177,12 +178,12 @@ class="flex relative flex-col w-full  bg-gray-900 text-white  lg:flex-row lg:fle
  id="" type="button" x-on:click.prevent="open = true" class=" 
   w-full lg:w-auto 
 
-    inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-gray-400 text-white hover:bg-white hover:text-gray-900">
+    inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-gray-400 text-white hover:bg-white hover:text-gray-900 z-30">
     <h5 class="text-3xl font-extrabold">Send us a Text</h5> 
 </button>
 
         <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
-    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
+    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5 z-50">
             <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
         <div class="block mb-4 border border-gray-200 rounded-lg">
             <input type="text" name="first-name" id="1-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
@@ -217,7 +218,7 @@ class="flex relative flex-col w-full  bg-gray-900 text-white  lg:flex-row lg:fle
                 <div>
                     
  
-    <div id="" class="flex text-center justify-center items-center z-50 w-full lg:w-auto " x-data="{open: false}">
+    <div id="" class="flex text-center justify-center items-center  w-full lg:w-auto " x-data="{open: false}">
         
 <button 
  
@@ -228,12 +229,12 @@ class="flex relative flex-col w-full  bg-gray-900 text-white  lg:flex-row lg:fle
  id="side-button" type="button" x-on:click.prevent="open = true" class=" 
   
 
-   mb-3 fixed bottom-0 -right-80 z-10 mr-3 lg:mr-0 z-50 inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-gray-400 text-white hover:bg-white hover:text-gray-900">
+   mb-3 fixed bottom-0 -right-80 z-10 mr-3 lg:mr-0 z-40 inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-gray-400 text-white hover:bg-white hover:text-gray-900 z-30">
     <h5 class="text-3xl font-extrabold">Send us a Text</h5> 
 </button>
 
         <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
-    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
+    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5 z-50">
             <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
         <div class="block mb-4 border border-gray-200 rounded-lg">
             <input type="text" name="first-name" id="2-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
@@ -285,7 +286,7 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
         <div class="relative lg:w-1/2">
         
         <video class="object-cover w-full lg:absolute h-80 lg:h-full" autoplay loop muted playsinline>
-            <source src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ZWOMGOKTV3QCN4CEV246KBMT4X4WPBZN0NKJ1UBB.mp4" type = "video/mp4" >
+            <source src="https://landing-page-app-hero-images.s3.amazonaws.com/media/6CYJR4ZT3FIBGZCBIRGWXFN9YV1KB4S4DLE8RP8U.mp4" type = "video/mp4" >
         </video>
         
            
@@ -301,6 +302,7 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
             </div>
 
             <div class = "flex flex-row flex-wrap text-center w-full lg:max-w-lg">
+                
                 
                 
                 
@@ -357,7 +359,20 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
                     
                     
                     
-                                  
+                    
+    <a 
+    target="_blank" 
+    href = "https://www.tiktok.com/@superiorautospa?"> 
+        <span 
+             
+                style= "color:#9F0A05 " 
+             
+            class = " text-gray-400 "> 
+            
+            <i class="fab fa-tiktok fa-3x lg:fa-3x "></i>
+        </span> 
+    </a> 
+              
      
 
                </div>
@@ -431,118 +446,118 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
     
     
     
+    
 
     <div id="our-work" class="relative mb-0 w-full pt-12 overflow-hidden   bg-white text-gray-900   md:pt-20 xl:pt-20 xl:pb-20">
         <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
             <h2  style= "color:#000000" class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Our Best Work</h2>
             <h2  style= "color:#9F0A05" class="my-3 mb-10 text-xl font-medium  text-gray-400  text-center">See why our customers love us</h2>
-            <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [   [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/8PLVMZMFH8GC0Q3VH5O3US174NH2QRJHVVN82536.jpeg', 'photo'],      [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/H2MMUTW8RK4EV4QCIE7PNUI50995KK7ZQ8CNRVNI.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/Z9PZO35GOTUB0M74DX7LSEDDZ75VO1ADFP6BAT8V.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/O0BK22MJJ4VN670FGBIGY3SM1OXHSDW0BWY1EGWQ.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/QAOMODSSKC3O1762S2QWVJRNRWDZFXWGYTF93Z9E.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/N6EXKNQGEYRV9C7JP29JT1UADFJXW0T7CENVOXOD.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/X3GH3EIGLFKSI134HDC4WAZR5MXNGZT9GK4D7ECE.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/007QZR3ZQ96PXYMC5I78EXBCAISPRS44HL5NYAN5.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/R11HNJDFPY96RLUF6AOSYG3VBUINNC7VW648D32N.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/F2WRRJ4W4RMW39EDQ46YYRKHG3W8YSJCZDS5B0BX.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/Z8J2UG7KZBKVILPRPN7DHNQHQUR2BESDRKLINERT.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/OGGNXD9YVV5CTP62HM974HEZLZLQV63XDLO5W48U.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/J4H822KA6JOZC300VNGQI57QBWTI6TKD83W9VI1G.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/HC6DDC9QNMJKBPKK4RTF4B0ALWZWUOWC3ZE7RDPR.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/8UW9PLO9MG32PP1DJEBX0ZRCJP6CFPIJCRM64JY4.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/ZCHGXL5UWIYCQAGOHO2N963RP37RT7XY2A7UT5CF.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/VQ6DPMBBI7ODJW57U2U1I1CAZBWWI1ZK3GLT2LTM.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/O52ROP1QG0VE8FICHGXSKVB1QOA2VJRQL88DY3VN.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/WZNVO6DOUTYWZZI8NFKMOD5BKVT9H3TCH689DDP2.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/XUJBWQN6HVZNDLQO109BSG28WOTO1GKZDUALS0J4.jpeg', 'photo'],   ] }" @keydown.escape= "open = false"   >
+            <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [   [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/2Z83GTVZ9RQGFOMXLRDH4LW94RDN4OHWPQ8OWIMH.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/59K250RJYGBUJWEON6S62L0MBYNY5I7UITGH9K4T.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/AS22N84VOBZD5T2107OK0LG6BT63CXGCM5LZFTG5.jpeg', 'photo'],      [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/8PLVMZMFH8GC0Q3VH5O3US174NH2QRJHVVN82536.jpeg', 'photo'],      [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/H2MMUTW8RK4EV4QCIE7PNUI50995KK7ZQ8CNRVNI.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/Z9PZO35GOTUB0M74DX7LSEDDZ75VO1ADFP6BAT8V.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/O0BK22MJJ4VN670FGBIGY3SM1OXHSDW0BWY1EGWQ.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/QAOMODSSKC3O1762S2QWVJRNRWDZFXWGYTF93Z9E.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/N6EXKNQGEYRV9C7JP29JT1UADFJXW0T7CENVOXOD.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/X3GH3EIGLFKSI134HDC4WAZR5MXNGZT9GK4D7ECE.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/007QZR3ZQ96PXYMC5I78EXBCAISPRS44HL5NYAN5.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/R11HNJDFPY96RLUF6AOSYG3VBUINNC7VW648D32N.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/F2WRRJ4W4RMW39EDQ46YYRKHG3W8YSJCZDS5B0BX.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/Z8J2UG7KZBKVILPRPN7DHNQHQUR2BESDRKLINERT.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/OGGNXD9YVV5CTP62HM974HEZLZLQV63XDLO5W48U.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/J4H822KA6JOZC300VNGQI57QBWTI6TKD83W9VI1G.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/HC6DDC9QNMJKBPKK4RTF4B0ALWZWUOWC3ZE7RDPR.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/8UW9PLO9MG32PP1DJEBX0ZRCJP6CFPIJCRM64JY4.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/ZCHGXL5UWIYCQAGOHO2N963RP37RT7XY2A7UT5CF.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/VQ6DPMBBI7ODJW57U2U1I1CAZBWWI1ZK3GLT2LTM.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/O52ROP1QG0VE8FICHGXSKVB1QOA2VJRQL88DY3VN.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/WZNVO6DOUTYWZZI8NFKMOD5BKVT9H3TCH689DDP2.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/XUJBWQN6HVZNDLQO109BSG28WOTO1GKZDUALS0J4.jpeg', 'photo'],   ] }" @keydown.escape= "open = false"   >
                                     
                         
-                              
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 0; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/8PLVMZMFH8GC0Q3VH5O3US174NH2QRJHVVN82536.jpeg"  alt = "Photo number 1 of Superior Auto Spa&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 0; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/342x240/media/2Z83GTVZ9RQGFOMXLRDH4LW94RDN4OHWPQ8OWIMH.jpeg"  alt = "Photo number 1 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 1; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/342x240/media/59K250RJYGBUJWEON6S62L0MBYNY5I7UITGH9K4T.jpeg"  alt = "Photo number 2 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 2; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/342x240/media/AS22N84VOBZD5T2107OK0LG6BT63CXGCM5LZFTG5.jpeg"  alt = "Photo number 3 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
                     
                                     
                     
                         <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40">
-                            <video class="rounded shadow-md object-cover w-full h-60" loading="lazy" controls> <source src="https://landing-page-app-hero-images.s3.amazonaws.com/media/3IZBX9NFYW6MQWTX7CLWOMY51HRTYHKRB02CXPTK.mp4" >
+                            <video preload="metadata" class="rounded shadow-md object-cover w-full h-60" loading="lazy" controls> <source src="https://landing-page-app-hero-images.s3.amazonaws.com/media/4YW6ZVGV6OSTRPQOYRB6BK2ZCIPIOP40KKLBI8HB.mp4#t=0.5" >
                             </video>
                         </div>
                     
                                     
                         
-                              
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 2; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/H2MMUTW8RK4EV4QCIE7PNUI50995KK7ZQ8CNRVNI.jpeg"  alt = "Photo number 3 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 4; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/342x240/media/8PLVMZMFH8GC0Q3VH5O3US174NH2QRJHVVN82536.jpeg"  alt = "Photo number 5 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
+                    
+                                    
+                    
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40">
+                            <video preload="metadata" class="rounded shadow-md object-cover w-full h-60" loading="lazy" controls> <source src="https://landing-page-app-hero-images.s3.amazonaws.com/media/3IZBX9NFYW6MQWTX7CLWOMY51HRTYHKRB02CXPTK.mp4#t=0.5" >
+                            </video>
+                        </div>
                     
                                     
                         
-                              
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 3; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Z9PZO35GOTUB0M74DX7LSEDDZ75VO1ADFP6BAT8V.jpeg"  alt = "Photo number 4 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 6; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/342x240/media/H2MMUTW8RK4EV4QCIE7PNUI50995KK7ZQ8CNRVNI.jpeg"  alt = "Photo number 7 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
                     
                                     
                         
-                              
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 4; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/O0BK22MJJ4VN670FGBIGY3SM1OXHSDW0BWY1EGWQ.jpeg"  alt = "Photo number 5 of Superior Auto Spa&#x27;s best work performing a Maintenance Wash job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 7; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/342x240/media/Z9PZO35GOTUB0M74DX7LSEDDZ75VO1ADFP6BAT8V.jpeg"  alt = "Photo number 8 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
                     
                                     
                         
-                              
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 5; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/QAOMODSSKC3O1762S2QWVJRNRWDZFXWGYTF93Z9E.jpeg"  alt = "Photo number 6 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 8; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/342x240/media/O0BK22MJJ4VN670FGBIGY3SM1OXHSDW0BWY1EGWQ.jpeg"  alt = "Photo number 9 of Superior Auto Spa&#x27;s best work performing a Maintenance Wash job"   loading="lazy" ></div>
                     
                                     
                         
-                              
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 6; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/N6EXKNQGEYRV9C7JP29JT1UADFJXW0T7CENVOXOD.jpeg"  alt = "Photo number 7 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 9; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/342x240/media/QAOMODSSKC3O1762S2QWVJRNRWDZFXWGYTF93Z9E.jpeg"  alt = "Photo number 10 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
                     
                                     
                         
-                              
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 7; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/X3GH3EIGLFKSI134HDC4WAZR5MXNGZT9GK4D7ECE.jpeg"  alt = "Photo number 8 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 10; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/342x240/media/N6EXKNQGEYRV9C7JP29JT1UADFJXW0T7CENVOXOD.jpeg"  alt = "Photo number 11 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
                     
                                     
                         
-                              
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 8; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/007QZR3ZQ96PXYMC5I78EXBCAISPRS44HL5NYAN5.jpeg"  alt = "Photo number 9 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 11; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/342x240/media/X3GH3EIGLFKSI134HDC4WAZR5MXNGZT9GK4D7ECE.jpeg"  alt = "Photo number 12 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
                     
                                     
                         
-                              
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 9; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/R11HNJDFPY96RLUF6AOSYG3VBUINNC7VW648D32N.jpeg"  alt = "Photo number 10 of Superior Auto Spa&#x27;s best work performing a Maintenance Wash job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 12; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/342x240/media/007QZR3ZQ96PXYMC5I78EXBCAISPRS44HL5NYAN5.jpeg"  alt = "Photo number 13 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
                     
                                     
                         
-                              
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 10; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/F2WRRJ4W4RMW39EDQ46YYRKHG3W8YSJCZDS5B0BX.jpeg"  alt = "Photo number 11 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 13; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/342x240/media/R11HNJDFPY96RLUF6AOSYG3VBUINNC7VW648D32N.jpeg"  alt = "Photo number 14 of Superior Auto Spa&#x27;s best work performing a Maintenance Wash job"   loading="lazy" ></div>
                     
                                     
                         
-                              
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 11; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Z8J2UG7KZBKVILPRPN7DHNQHQUR2BESDRKLINERT.jpeg"  alt = "Photo number 12 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 14; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/342x240/media/F2WRRJ4W4RMW39EDQ46YYRKHG3W8YSJCZDS5B0BX.jpeg"  alt = "Photo number 15 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
                     
                                     
                         
-                              
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 12; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/OGGNXD9YVV5CTP62HM974HEZLZLQV63XDLO5W48U.jpeg"  alt = "Photo number 13 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 15; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/342x240/media/Z8J2UG7KZBKVILPRPN7DHNQHQUR2BESDRKLINERT.jpeg"  alt = "Photo number 16 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
                     
                                     
                         
-                              
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 13; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/J4H822KA6JOZC300VNGQI57QBWTI6TKD83W9VI1G.jpeg"  alt = "Photo number 14 of Superior Auto Spa&#x27;s best work performing a Maintenance Wash job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 16; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/342x240/media/OGGNXD9YVV5CTP62HM974HEZLZLQV63XDLO5W48U.jpeg"  alt = "Photo number 17 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
                     
                                     
                         
-                              
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 14; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/HC6DDC9QNMJKBPKK4RTF4B0ALWZWUOWC3ZE7RDPR.jpeg"  alt = "Photo number 15 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 17; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/342x240/media/J4H822KA6JOZC300VNGQI57QBWTI6TKD83W9VI1G.jpeg"  alt = "Photo number 18 of Superior Auto Spa&#x27;s best work performing a Maintenance Wash job"   loading="lazy" ></div>
                     
                                     
                         
-                              
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 15; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/8UW9PLO9MG32PP1DJEBX0ZRCJP6CFPIJCRM64JY4.jpeg"  alt = "Photo number 16 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 18; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/342x240/media/HC6DDC9QNMJKBPKK4RTF4B0ALWZWUOWC3ZE7RDPR.jpeg"  alt = "Photo number 19 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
                     
                                     
                         
-                              
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 16; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ZCHGXL5UWIYCQAGOHO2N963RP37RT7XY2A7UT5CF.jpeg"  alt = "Photo number 17 of Superior Auto Spa&#x27;s best work performing a Maintenance Wash job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 19; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/342x240/media/8UW9PLO9MG32PP1DJEBX0ZRCJP6CFPIJCRM64JY4.jpeg"  alt = "Photo number 20 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
                     
                                     
                         
-                              
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 17; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/VQ6DPMBBI7ODJW57U2U1I1CAZBWWI1ZK3GLT2LTM.jpeg"  alt = "Photo number 18 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 20; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/342x240/media/ZCHGXL5UWIYCQAGOHO2N963RP37RT7XY2A7UT5CF.jpeg"  alt = "Photo number 21 of Superior Auto Spa&#x27;s best work performing a Maintenance Wash job"   loading="lazy" ></div>
                     
                                     
                         
-                              
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 18; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/O52ROP1QG0VE8FICHGXSKVB1QOA2VJRQL88DY3VN.jpeg"  alt = "Photo number 19 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 21; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/342x240/media/VQ6DPMBBI7ODJW57U2U1I1CAZBWWI1ZK3GLT2LTM.jpeg"  alt = "Photo number 22 of Superior Auto Spa&#x27;s best work performing a Full Detail Service job"   loading="lazy" ></div>
                     
                                     
                         
-                              
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 19; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/WZNVO6DOUTYWZZI8NFKMOD5BKVT9H3TCH689DDP2.jpeg"  alt = "Photo number 20 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 22; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/342x240/media/O52ROP1QG0VE8FICHGXSKVB1QOA2VJRQL88DY3VN.jpeg"  alt = "Photo number 23 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
                     
                                     
                         
-                              
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 20; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/XUJBWQN6HVZNDLQO109BSG28WOTO1GKZDUALS0J4.jpeg"  alt = "Photo number 21 of Superior Auto Spa&#x27;s best work performing a Maintenance Wash job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 23; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/342x240/media/WZNVO6DOUTYWZZI8NFKMOD5BKVT9H3TCH689DDP2.jpeg"  alt = "Photo number 24 of Superior Auto Spa&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 24; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/342x240/media/XUJBWQN6HVZNDLQO109BSG28WOTO1GKZDUALS0J4.jpeg"  alt = "Photo number 25 of Superior Auto Spa&#x27;s best work performing a Maintenance Wash job"   loading="lazy" ></div>
                     
                  
                                     
@@ -624,7 +639,6 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
 
             
 </div>
-
         
     
     
